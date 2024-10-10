@@ -16,17 +16,17 @@ public class App {
         int nombre = clavier.nextInt();
 
         if (nombreDeviner == nombre) {
-            System.out.println("Bonne réponse");
+            System.out.println("Quel bol, vous avez trouvé !");
         }
 
         else if (nombreDeviner < nombre) {
             int ecart = nombre - nombreDeviner;
-            System.out.println("Mauvaise reponse , Il vous manquait " + ecart + " .");
+            System.out.println("Perdu ! Vous avez dépassé de" + ecart + " .");
         }
 
         else {
             int ecart2 = nombreDeviner - nombre;
-            System.out.println("Mauvaise reponse , vous avez de  " + ecart2 + " .");
+            System.out.println("Perdu ! Il vous manquait " + ecart2 + " .");
         }
         System.out.println("Le nombre était " + nombreDeviner + " ."); // bonus pour test
     }
